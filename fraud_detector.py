@@ -17,10 +17,8 @@ from tensorflow.keras.layers import Dense
 from imblearn.over_sampling import SMOTE
 
 
-# Cargamos los datos y reducimos su tamaño a 50 000 registros
-df_completo = pd.read_csv('card_transdata.csv')
-df = df_completo.iloc[:50000]
-
+# Cargamos los datos
+df = pd.read_csv('card_transdata.csv')
 
 # Hacemos que se muestren todas las columnas
 pd.set_option('display.max_columns', None)
